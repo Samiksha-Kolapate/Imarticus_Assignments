@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Page</title>
+    </head>
+    <body>
+        <h1>Register</h1>
+        <form action="form.html" method="post">
+        
+            <div>
+                <label for="full"> Full Name* </label>
+                <input type="text" id="full" name="full" placeholder="First Name" required/>
+                <input type="text" id="full" name="full" placeholder="Last Name" required/>
+            </div>
+            <br>
+            <div>
+                <label for="address"> Address </label>
+                <textarea id="address" rows="5" columns="20">
+                </textarea>
+            </div>
+            <br>
+            <div>
+                <label for="email"> Email address* </label>
+                <input type="text" id="email" name="email" required/>
+            </div>
+            <br>
+            <div>
+                <lable for="phone"> Phone* </lable>
+                <input type="text" id="phone" name="phone" required/>
+            </div>
+            <br>
+            <div>
+                <label for="gender"> Gender* </label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male"/>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female"/>
+            </div>
+            <br>
+            <div>
+                <label for="hobbies"> Hobbies </label>
+                <br>
+                <label for="Cricket">Cricket</label>
+                <input type="checkbox" id="Cricket" name="hobbies" value="Cricket"/>
+                <br>
+                <label for="Movies">Movies</label>
+                <input type="checkbox" id="Movies" name="hobbies" value="Movies"/>
+                <br>
+                <label for="Hockey">Hockey</label>
+                <input type="checkbox" id="Hockey" name="hobbies" value="Hockey"/>
+            </div>
+            <br>
+            <div>
+                <label for="language"> Languages </label>
+                <br>
+                <label for="Hindi">Hindi</label>
+                <input type="checkbox" id="Hindi" name="language" value="Hindi"/>
+                <br>
+                <label for="Marathi">Marathi</label>
+                <input type="checkbox" id="Marathi" name="language" value="Marathi"/>
+                <br>
+                <label for="English">English</label>
+                <input type="checkbox" id="English" name="language" value="English"/>
+            </div>
+            <br>
+            <div>
+                <label for="skills"> Skills </label>
+                <select id="skills" multiple>
+                    <option> Java </option>
+                    <option> HTML </option>
+                    <option> CSS </option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="country1"> Country* </label>
+                <select id="country1" multiple>
+                    <option> India </option>
+                    <option> US </option>
+                    <option> China </option>
+                    <option> France </option>
+                    <option> Australia </option>
+                    <option> South Africa </option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="dob">Date of Birth*</label>
+                <input type="date" id="dob" name="dob" required/> 
+            </div>
+            <br>
+            <div>
+                <label for="pass">Password</label>
+                <input type="password" id="pass" name="pass"/>
+                <br>
+                <br>
+                <label for="pass"> Confirm Password</label>
+                <input type="password" id="pass" name="pass"/>
+            </div>
+            <br>
+            <div>
+                <img src="logo.jpg">
+                <br>
+                <label for="upload"></label>
+                <input type="file" id="upload"/>
+            </div>
+            <br>
+            <div>
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+    </body>
+</html>

@@ -2,7 +2,7 @@ div > p::first-letter{
     font-size: 40px;
     color: blue;
 }
-p:nth-child(even){
+p:nth-child(even):first-letter{
     color: orange;
 }
 

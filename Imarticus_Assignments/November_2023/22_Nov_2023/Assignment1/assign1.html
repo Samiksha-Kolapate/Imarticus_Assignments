@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Page</title>
+        <style>
+            .main-container {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 5px;
+            }
+            .inner-divs2{
+                padding: 10px;
+                background: rgb(63, 197, 119);
+                border:2px solid black;
+                text-align: center;
+            }
+            .grid-item1{
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+            .grid-item2{
+                grid-row-start: 1;
+                grid-row-end: 2;
+                grid-column-start: 3;
+                grid-column-end: 4;
+            }
+            .grid-item3{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+            .grid-item4{
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 4;
+            }
+            .grid-item5{
+                grid-row-start: 1;
+                grid-row-end: 4;
+                grid-column-start: 4;
+                grid-column-end: 5;
+            }
+            .grid-item6{
+                grid-row-start: 1;
+                grid-row-end: 3;
+                grid-column-start: 5;
+                grid-column-end: 7;
+            }
+            .grid-item7{
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 5;
+                grid-column-end: 6;
+            }
+            .grid-item8{
+                grid-row-start: 3;
+                grid-row-end: 4;
+                grid-column-start: 6;
+                grid-column-end: 7;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="inner-divs2 grid-item1">A</div>
+            <div class="inner-divs2 grid-item2">B</div>
+            <div class="inner-divs2 grid-item3">C</div>
+            <div class="inner-divs2 grid-item4">D</div>
+            <div class="inner-divs2 grid-item5">E</div>
+            <div class="inner-divs2 grid-item6">F</div>
+            <div class="inner-divs2 grid-item7">G</div>
+            <div class="inner-divs2 grid-item8">H</div>
+        </div>
+    </body>
+</html>
