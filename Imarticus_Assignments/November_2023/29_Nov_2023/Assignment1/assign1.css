@@ -1,0 +1,19 @@
+div > p::first-letter{
+    font-size: 40px;
+    color: blue;
+}
+p:nth-child(even){
+    color: orange;
+}
+
+div > p::before{
+    content: "Welcome";
+}
+
+p::after{
+    content: "Bye";
+}
+
+p::first-line{
+    font-size: 20px;
+}

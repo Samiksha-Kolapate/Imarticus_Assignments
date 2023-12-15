@@ -1,0 +1,67 @@
+
+/* case 1 */
+.black-box{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: black;
+}
+
+.red-box{
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: red;
+    top:100px;
+    
+}
+.red-box1{
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background-color: orangered;
+    top:100px;
+    left: 400px;
+    
+}
+
+/* case 2 */
+.skyblue-box{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(51, 162, 206);
+    top: 30px;
+    left: 800px;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+.yellow-box{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    top: 50px;
+    left: 50px;
+}
+.skyblue-box1{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(51, 162, 206);
+    top: 30px;
+    border: 3px solid red;
+    border-radius: 10px;
+}
+
+/* case 3 */
+
+.yellow-box1{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: yellow;
+    bottom: 240px;
+    left: 350px;
+}

@@ -1,0 +1,40 @@
+/*   1   */
+div p:first-of-type{
+    color: red;
+}
+
+section p:first-of-type{
+    color: red;
+}
+
+article p:first-of-type{
+    color: red;
+}
+
+/*  2  */
+section + p{
+    color: blue;
+}
+
+/*  3   */
+div ~ p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+article ~ p{
+    font-size: 20px;
+    font-style: italic;
+}
+
+/*  4   */
+div article p{
+    color: green;
+}
+
+/*  5   */
+div p{
+    color: rgb(188, 25, 209);
+} 
+
+
