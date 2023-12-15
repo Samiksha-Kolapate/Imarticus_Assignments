@@ -1,0 +1,55 @@
+#rect{
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    margin: 50px;
+    border: 1px solid black;
+    animation-name: rectangle;
+    animation-duration: 8s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-direction: alternate
+}
+
+@keyframes rectangle {
+    0%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+        border: 1px solid black;
+    }
+    25%{
+        background-color: yellow;
+        left: 300px;
+        top: 0px;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 0px;
+    }
+    50%{
+        background-color:rgb(21, 172, 231);
+        left: 300px;
+        top: 100px;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+    75%{
+        background-color: rgb(247, 169, 182);
+        left: 0px;
+        top: 100px;
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 10px 10px 10px 10px;
+    }
+    100%{
+        background-color: red;
+        left: 0px;
+        top: 0px;
+        border: 1px solid black;
+    }
+}
