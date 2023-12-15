@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+      .dropdown-menu {
+	position:relative;
+	width:100%;
+	top: 0px !important;
+    left: 0px !important;
+}
+  </style>  
+</head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+$(document).ready(function(){
+	var data = 
+	[{"id":"222","name":"sneha","employee_salary":"100000","employee_age":"23"},{"id":"223","name":"arpita","employee_salary":"40000","employee_age":"33"},{"id":"225","name":"pogi","employee_salary":"5646545","employee_age":"546"},{"id":"229","name":"eer","employee_salary":"0","employee_age":"0"},{"id":"232","name":"sdfadf","employee_salary":"0","employee_age":"0"},{"id":"234","name":"dfgdgd","employee_salary":"45","employee_age":"21"},{"id":"236","name":"nb","employee_salary":"0","employee_age":"0"},{"id":"237","name":"BHsdgygbfvr1bn","employee_salary":"0","employee_age":"0"},{"id":"238","name":"BHsdgygbfvr1bn","employee_salary":"0","employee_age":"0"},{"id":"239","name":"assa","employee_salary":"0","employee_age":"0"}];
+	var $input = $(".typeahead");
+	$input.typeahead({
+	  source: data,
+	  autoSelect: true
+	});
+});
+    </script>
+    <div class="container">
+    <form method="post" action="assign1_forms.html">
+        <fieldset disabled>
+            <div class="row">
+                <div class="input-group">
+                 <div class="col">
+                   <input type="text" class="form-control" placeholder="First name" required>
+                 </div>
+                 <div class="col">
+                   <input type="text" class="form-control" placeholder="Middle name (optional)">
+                 </div>
+                 <div class="col">
+                   <input type="text" class="form-control" placeholder="Last name" required>
+                 </div>
+               </div>
+             </div>
+             <br>
+     
+             <div class="form-group">
+               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+             </div>
+     
+             <div class="form-group">
+                 <label for="inputPassword2" class="sr-only">Password</label>
+                 <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+             </div>
+     
+             <div class="row">
+                 <div class="input-group">
+                  <div class="col">
+                    <select class="form-control" id="exampleFormControlSelect1">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                     <option>6</option>
+                     <option>7</option>
+                     <option>8</option>
+                     <option>9</option>
+                     <option>10</option>
+                     <option>11</option>
+                     <option>12</option>
+                     <option>13</option>
+                     <option>14</option>
+                     <option>15</option>
+                     <option>16</option>
+                     <option>17</option>
+                     <option>18</option>
+                     <option>19</option>
+                     <option>20</option>
+                     <option>21</option>
+                     <option>22</option>
+                     <option>23</option>
+                     <option>24</option>
+                     <option>25</option>
+                     <option>26</option>
+                     <option>27</option>
+                     <option>28</option>
+                     <option>29</option>
+                     <option>30</option>
+                     <option>31</option>
+                   </select>
+                  </div>
+     
+                  <div class="col">
+                     <select class="form-control" id="exampleFormControlSelect1" value="Jan">
+                      <option>Jan</option>
+                      <option>Feb</option>
+                      <option>Mar</option>
+                      <option>April</option>
+                      <option>May</option>
+                      <option>June</option>
+                      <option>Jul</option>
+                      <option>Aug</option>
+                      <option>Sep</option>
+                      <option>Oct</option>
+                      <option>Nov</option>
+                      <option>Dec</option>
+                    </select>
+                 </div>
+     
+                 <div class="col">
+                     <select class="form-control" id="exampleFormControlSelect1" value="0000">
+                      <option>2023</option>
+                      <option>2022</option>
+                      <option>2021</option>
+                      <option>2020</option>
+                      <option>2019</option>
+                      <option>2018</option>
+                      <option>2017</option>
+                      <option>2016</option>
+                      <option>2015</option>
+                      <option>2014</option>
+                      <option>2013</option>
+                      <option>2012</option>
+                      <option>2011</option>
+                      <option>2010</option>
+                    </select>
+                 </div>
+     
+                 </div>
+             </div>
+             <br><br>
+
+             <div class="row">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          Male
+                        </label>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Female
+                        </label>
+                      </div>
+                </div>
+            </div>
+    
+            <br><br>
+            <div class="form-group">
+              <label for="exampleFormControlSelect2">City</label>
+              <select class="form-control" id="exampleFormControlSelect2">
+                <option>Ratnagiri</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Lanja</option>
+                <option>Khandala</option>
+              </select>
+            </div>
+            <br><br>
+    
+            <div class="form-group">
+                <label for="exampleFormControlSelect2">Fruits you liked</label>
+                <select multiple class="form-control" id="exampleFormControlSelect2">
+                  <option>Mango</option>
+                  <option>Apple</option>
+                  <option>Orange</option>
+                  <option>Pomegranate</option>
+                  <option>Cashew</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Write something about yourself</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="12" ></textarea>
+            </div>
+            <br><br>
+     
+        </fieldset>
+        <button type="edit" class="btn btn-primary mb-2">Edit</button>
+      </form>
+     </div>
+</body>
+</html>
