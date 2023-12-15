@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <p id="p1"> 30 </p>
+    <p id="p2"> 60 </p>
+    <p id="p3"> 100 </p>
+    <p id="p4"> 40 </p>
+    
+    <p id="p5"></p>
+    <script>
+        let a = document.getElementById("p1").innerHTML;
+        console.log(parseInt(a));
+        let b = document.getElementById("p2").innerHTML;
+        console.log(parseInt(b));
+        let c = document.getElementById("p3").innerHTML;
+        console.log(parseInt(c));
+        let d = document.getElementById("p4").innerHTML;
+        console.log(parseInt(d));
+
+        document.getElementById("p5").innerHTML = "Total: " + (parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d));
+    </script>
+</body>
+</html>
