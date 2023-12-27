@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+</head>
+<body>
+    <p><b>Enter the number</b><input type="text" id="a" value=""></p>
+    <button id="fact"><b>Find Factorial</b> </button>
+    <p id="result"><b>Result: </b></p>
+
+    <button id="btn1" onclick="changeColor1()" style="background-color: red; width: 80px;height: 50px;"></button>
+    <button id="btn2" onclick="changeColor2()" style="background-color: blue; width: 80px;height: 50px;"></button>
+    <button id="btn3" onclick="changeColor3()" style="background-color: green; width: 80px;height: 50px;"></button>
+
+    <!-- <button id="btn1" style="background-color: red; width: 80px;height: 50px;"></button>
+    <button id="btn2" style="background-color: blue; width: 80px;height: 50px;"></button>
+    <button id="btn3" style="background-color: green; width: 80px;height: 50px;"></button> -->
+
+    <script>
+        /* 1 */
+        var a = document.getElementById("a");
+        console.log(a);
+
+        document.getElementById("fact").addEventListener("click",() =>{
+            console.log(a);
+
+            findFact(a);
+        });
+
+        function findFact(a){
+            var fact = 1;
+            for(let i=1;i<=a;i++){
+                fact = fact * i;
+            }
+            console.log(fact);
+            document.getElementById("result").innerHTML ="Result: "+ fact;
+        }
+
+        /* 2  */
+        function changeColor1(){
+            document.body.style.backgroundColor = "red";
+        }
+
+        function changeColor2(){
+            document.body.style.backgroundColor = "blue";
+        }
+
+        function changeColor3(){
+            document.body.style.backgroundColor = "green";
+        }
+
+        /* var mybtn1 = document.getElementById("btn1");
+        var mybtn2 = document.getElementById("btn2");
+        var mybtn3 = document.getElementById("btn3");
+        mybtn1.addEventListener("click",fun1);
+        mybtn2.addEventListener("click",fun2);
+        mybtn3.addEventListener("click",fun3);
+
+        function fun1(){
+            document.body.style.backgroundColor = "red";
+        }
+        function fun2(){
+            document.body.style.backgroundColor = "blue";
+        }
+        function fun3(){
+            document.body.style.backgroundColor = "green";
+        }
+ */
+        
+    </script>
+</body>
+</html>
