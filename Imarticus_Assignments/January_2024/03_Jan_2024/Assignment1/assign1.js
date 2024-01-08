@@ -8,7 +8,7 @@ let Number_check = new Promise((resolve,reject) => {
         resolve("The number is odd");
     }
     else{
-        reject("The number is negative");
+        reject(number);
     }
 });
 
@@ -17,7 +17,7 @@ Number_check.then(function successValue(result){
 })
 
 .catch(function errorValue(result){
-    console.log(result);
+    console.log("The number is negative");
 })
 
 .finally(function always()
